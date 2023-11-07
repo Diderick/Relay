@@ -7,6 +7,10 @@ Relay::Relay(int p, bool isNormallyOpen){
 	normallyOpen = isNormallyOpen;
 }
 
+void Relay::setPin(int m_pin){
+	pin = m_pin;	
+}
+
 void Relay::begin(){
 	pinMode(pin, OUTPUT);
 }
